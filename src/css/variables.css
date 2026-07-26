@@ -1,0 +1,44 @@
+:root {
+  /* Color Palette */
+  --color-primary: #0F2438; /* Deep Navy */
+  --color-hero-bg: #040646; /* Vize360 Dark Blue */
+  --color-accent: #C9A24B; /* Warm Bronze/Gold */
+  --color-bg: #FAF8F4; /* Off-White */
+  --color-gray: #E4E1DA; /* Soft Gray */
+  --color-white: #ffffff;
+  --color-text-dark: #333333;
+  --color-text-light: #f5f5f5;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Typography Scale */
+  --text-h1: clamp(2.5rem, 5vw, 3.5rem);
+  --text-h2: clamp(2rem, 4vw, 2.5rem);
+  --text-h3: clamp(1.75rem, 3vw, 2rem);
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 6rem;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(15, 36, 56, 0.05);
+  --shadow-md: 0 4px 12px rgba(15, 36, 56, 0.1);
+  --shadow-lg: 0 12px 24px rgba(15, 36, 56, 0.15);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim | Golden Visa Danışmanlık</title>
+  <link rel="icon" type="image/jpeg" href="./assets/favicon.png" />
+  
+  <link rel="stylesheet" href="./src/css/variables.css" />
+  <link rel="stylesheet" href="./src/css/base.css" />
+  <link rel="stylesheet" href="./src/css/layout.css" />
+  <link rel="stylesheet" href="./src/css/components.css" />
+  
+  <script type="module" src="./src/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header scrolled">
+    <div class="container navbar">
+      <a href="/" class="brand-logo">Golden Visa</a>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/" class="nav-link">Anasayfa</a></li>
+          <li class="nav-item"><a href="/about.html" class="nav-link">Hakkımızda</a></li>
+          <li class="nav-item"><a href="/services.html" class="nav-link">Hizmetler</a></li>
+          <li class="nav-item"><a href="/countries.html" class="nav-link">Ülkeler</a></li>
+          <li class="nav-item"><a href="/process.html" class="nav-link">Süreç</a></li>
+          <li class="nav-item"><a href="/contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background-color: var(--color-primary); color: white; padding: 120px 0 60px; text-align: center;">
+    <div class="container">
+      <h1 style="color: white; margin-bottom: 0;">Bizimle İletişime Geçin</h1>
+      <p style="color: var(--color-gray); margin-top: var(--spacing-sm);">Ön değerlendirme ve sorularınız için buradayız</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section>
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xxl);">
+        
+        <!-- Contact Form -->
+        <div class="card">
+          <h3 style="margin-bottom: var(--spacing-lg);">Ücretsiz Ön Değerlendirme Formu</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="name">Adınız Soyadınız</label>
+              <input type="text" id="name" class="form-control" placeholder="Örn: Ahmet Yılmaz" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-posta Adresiniz</label>
+              <input type="email" id="email" class="form-control" placeholder="Örn: ornek@email.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Telefon Numaranız</label>
+              <input type="tel" id="phone" class="form-control" placeholder="Örn: 0555 123 45 67" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="visaType">İlgilendiğiniz Vize Türü</label>
+              <select id="visaType" class="form-control" required>
+                <option value="" disabled selected>Lütfen seçiniz</option>
+                <option value="student">Öğrenci Vizesi</option>
+                <option value="work">Çalışma Vizesi</option>
+                <option value="family">Aile Birleşimi</option>
+                <option value="invest">Yatırımcı Vizesi</option>
+                <option value="other">Diğer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Mesajınız / Durumunuzun Özeti</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Kısaca durumunuzdan bahsedin..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Talebi Gönder</button>
+          </form>
+        </div>
+
+        <!-- Contact Info & Map Placeholder -->
+        <div>
+          <h3 style="margin-bottom: var(--spacing-lg);">İletişim Bilgileri</h3>
+          <div style="margin-bottom: var(--spacing-xl);">
+            <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 1.5rem;">📞</span> 
+              <strong>Telefon 1:</strong> +48 731 847 745
+            </p>
+            <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 1.5rem;">📞</span> 
+              <strong>Telefon 2:</strong> +48 883 881 840
+            </p>
+            <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 1.5rem;">✉️</span> 
+              <strong>E-posta:</strong> sanan.05@icloud.com
+            </p>
+            <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 1.5rem;">⏰</span> 
+              <strong>Çalışma Saatleri:</strong> Pzt - Cum, 09:00 - 18:00
+            </p>
+          </div>
+          
+          <!-- Map Placeholder -->
+          <div style="width: 100%; height: 300px; background-color: var(--color-gray); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-weight: 500;">
+            [ Google Haritalar Görünümü ]
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="./assets/favicon.png" alt="Golden Visa Danışmanlık" style="max-width: 120px; height: auto; border-radius: 8px; margin-bottom: 1rem;" />
+          <p>Güvenilir, şeffaf ve sonuç odaklı vize danışmanlık hizmetleri ile yanınızdayız.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Hızlı Linkler</h4>
+          <div class="footer-links">
+            <a href="/about.html">Hakkımızda</a>
+            <a href="/services.html">Hizmetlerimiz</a>
+            <a href="/process.html">Süreç Nasıl İşler?</a>
+            <a href="/contact.html">İletişim</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>İletişim</h4>
+          <div class="footer-links">
+            <p>📞 +48 731 847 745</p>
+            <p>📞 +48 883 881 840</p>
+            <p>✉️ sanan.05@icloud.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Golden Visa Danışmanlık. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

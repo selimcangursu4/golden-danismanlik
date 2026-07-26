@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Süreç Nasıl İşler? | Golden Visa Danışmanlık</title>
+  <link rel="icon" type="image/jpeg" href="./assets/favicon.png" />
+  
+  <link rel="stylesheet" href="./src/css/variables.css" />
+  <link rel="stylesheet" href="./src/css/base.css" />
+  <link rel="stylesheet" href="./src/css/layout.css" />
+  <link rel="stylesheet" href="./src/css/components.css" />
+  
+  <style>
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      border-left: 3px solid var(--color-accent);
+    }
+    .timeline-item {
+      margin-bottom: var(--spacing-xl);
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.7rem;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background-color: var(--color-primary);
+      border: 3px solid var(--color-accent);
+      border-radius: 50%;
+    }
+    .timeline-title {
+      color: var(--color-primary);
+      margin-bottom: var(--spacing-sm);
+    }
+  </style>
+
+  <script type="module" src="./src/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header scrolled">
+    <div class="container navbar">
+      <a href="/" class="brand-logo">Golden Visa</a>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/" class="nav-link">Anasayfa</a></li>
+          <li class="nav-item"><a href="/about.html" class="nav-link">Hakkımızda</a></li>
+          <li class="nav-item"><a href="/services.html" class="nav-link">Hizmetler</a></li>
+          <li class="nav-item"><a href="/countries.html" class="nav-link">Ülkeler</a></li>
+          <li class="nav-item"><a href="/process.html" class="nav-link" style="color: var(--color-accent);">Süreç</a></li>
+          <li class="nav-item"><a href="/contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background-color: var(--color-primary); color: white; padding: 120px 0 60px; text-align: center;">
+    <div class="container">
+      <h1 style="color: white; margin-bottom: 0;">Nasıl Çalışıyoruz?</h1>
+      <p style="color: var(--color-gray); margin-top: var(--spacing-sm);">Başarıya giden adım adım başvuru sürecimiz</p>
+    </div>
+  </section>
+
+  <!-- Timeline Content -->
+  <section>
+    <div class="container">
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <h3 class="timeline-title">1. Ön Değerlendirme & Analiz</h3>
+          <p>Mevcut durumunuz, seyahat geçmişiniz ve finansal yapınız uzman danışmanlarımızca incelenerek vize şansınız analiz edilir.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h3 class="timeline-title">2. Strateji & Yol Haritası</h3>
+          <p>Başvurunuzun olumlu sonuçlanması için en uygun vize türü seçilir ve dosya için özel bir sunum stratejisi geliştirilir.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h3 class="timeline-title">3. Evrak Hazırlığı & Kontrol</h3>
+          <p>Gerekli belgeler eksiksiz ve yasal mevzuata uygun şekilde toplanır, yeminli tercümeleri yapılır ve uzmanlarca çift kontrol edilir.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h3 class="timeline-title">4. Başvuru & Randevu Takibi</h3>
+          <p>Randevularınız alınır, harç ödemeleriniz gerçekleştirilir ve başvuru süreciniz konsolosluk kararına kadar anlık takip edilir.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="./assets/favicon.png" alt="Golden Visa Danışmanlık" style="max-width: 120px; height: auto; border-radius: 8px; margin-bottom: 1rem;" />
+          <p>Güvenilir, şeffaf ve sonuç odaklı vize danışmanlık hizmetleri ile yanınızdayız.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Hızlı Linkler</h4>
+          <div class="footer-links">
+            <a href="/about.html">Hakkımızda</a>
+            <a href="/services.html">Hizmetlerimiz</a>
+            <a href="/process.html">Süreç Nasıl İşler?</a>
+            <a href="/contact.html">İletişim</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>İletişim</h4>
+          <div class="footer-links">
+            <p>📞 +48 731 847 745</p>
+            <p>📞 +48 883 881 840</p>
+            <p>✉️ sanan.05@icloud.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Golden Visa Danışmanlık. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
