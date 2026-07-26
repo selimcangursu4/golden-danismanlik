@@ -91,4 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
       slider.scrollLeft = scrollLeft - walk;
     });
   }
+
+  // Mobile Menu Toggle
+  const menuToggle = document.getElementById('mobile-menu');
+  const navLinksList = document.querySelector('.nav-links');
+  
+  if (menuToggle && navLinksList) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinksList.classList.toggle('active');
+    });
+  }
 });
